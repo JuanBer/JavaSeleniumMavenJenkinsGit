@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Scripts/Personal/E2ESeleniumJenkins">
+        <classes>
+            <class name="testcases.TC_001">
+                <methods>
+                    <include name="testcase1"/>
+                </methods>
+            </class>
+            <class name="testcases.TC_002">
+                <methods>
+                    <include name="testcase2"/>
+                </methods>
+            </class>
+            <class name="testcases.TC_003">
+                <methods>
+                    <include name="testcase3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
