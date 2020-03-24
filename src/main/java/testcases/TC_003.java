@@ -1,6 +1,7 @@
 package testcases;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_003 {
@@ -11,6 +12,7 @@ public class TC_003 {
         driver.get("https://www.facebook.com");
         driver.findElementById("email").sendKeys("Bye");
         driver.findElementById("pass").sendKeys("Bye");
+        Assert.assertEquals(driver.getTitle(), "Hola");
         driver.quit();
     }
 }
