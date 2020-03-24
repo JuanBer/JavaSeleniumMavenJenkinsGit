@@ -9,8 +9,8 @@ public class TC_003 {
         System.setProperty("webdriver.chrome.driver", System.getenv("SeleniumChromeDriver"));
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com");
-        driver.findElementById("email").sendKeys("GoodBye");
-        driver.findElementById("pass").sendKeys("GoodBye");
+        driver.findElementById("email").sendKeys("Bye");
+        driver.findElementById("pass").sendKeys("Bye");
         driver.quit();
     }
 }
